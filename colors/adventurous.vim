@@ -60,13 +60,17 @@ if &t_Co >= 256 || has('gui_running')
 
     hi Comment          ctermbg=NONE ctermfg=59   guibg=NONE    guifg=#404449 cterm=NONE           gui=italic
     hi Constant         ctermbg=NONE ctermfg=32   guibg=NONE    guifg=#277BD3 cterm=NONE           gui=NONE
+    hi Conditional      ctermbg=NONE ctermfg=214  guibg=NONE    guifg=#F5BB12 cterm=NONE           gui=NONE
+    hi Number           ctermbg=NONE ctermfg=214  guibg=NONE    guifg=#F5BB12 cterm=NONE           gui=NONE
+    hi Operator         ctermbg=NONE ctermfg=214  guibg=NONE    guifg=#F5BB12 cterm=NONE           gui=NONE
     hi Error            ctermbg=NONE ctermfg=203  guibg=NONE    guifg=#F25A55 cterm=reverse        gui=reverse
     hi Identifier       ctermbg=NONE ctermfg=32   guibg=NONE    guifg=#277BD3 cterm=NONE           gui=NONE
     hi Ignore           ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE 
     hi PreProc          ctermbg=NONE ctermfg=214  guibg=NONE    guifg=#F5BB12 cterm=NONE           gui=NONE
-    hi Special          ctermbg=NONE ctermfg=214  guibg=NONE    guifg=#F5BB12 cterm=NONE           gui=NONE
-    hi Statement        ctermbg=NONE ctermfg=117  guibg=NONE    guifg=#7FD6FA cterm=NONE           gui=NONE
+    hi Special          ctermbg=NONE ctermfg=32   guibg=NONE    guifg=#277BD3 cterm=NONE           gui=NONE
+    hi Statement        ctermbg=NONE ctermfg=203  guibg=NONE    guifg=#F25A55 cterm=NONE           gui=NONE
     hi String           ctermbg=NONE ctermfg=117  guibg=NONE    guifg=#7FD6FA cterm=NONE           gui=NONE
+    hi Tag              ctermbg=NONE ctermfg=220  guibg=NONE    guifg=#FFC620 cterm=NONE           gui=NONE
     hi Todo             ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=reverse        gui=reverse
     hi Type             ctermbg=NONE ctermfg=222  guibg=NONE    guifg=#F0C674 cterm=underline      gui=underline
     hi Underlined       ctermbg=NONE ctermfg=173  guibg=NONE    guifg=#DE935F cterm=underline      gui=underline
@@ -74,20 +78,19 @@ if &t_Co >= 256 || has('gui_running')
     hi LineNr           ctermbg=16   ctermfg=188  guibg=#24272D guifg=#C5C8C6 cterm=NONE           gui=NONE
     hi NonText          ctermbg=NONE ctermfg=152  guibg=NONE    guifg=#BFD7DB cterm=NONE           gui=NONE
 
-    " hi Pmenu            ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi PmenuSbar        ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi PmenuSel         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi PmenuThumb       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi Pmenu            ctermbg=59   ctermfg=145  guibg=#373B41 guifg=#BDBDBD cterm=NONE          gui=NONE
+    hi PmenuSbar        ctermbg=59   ctermfg=NONE guibg=#373B41 guifg=NONE    cterm=NONE          gui=NONE
+    hi PmenuSel         ctermbg=109  ctermfg=16   guibg=#8ABEB7 guifg=#24272D cterm=NONE          gui=NONE
+    hi PmenuThumb       ctermbg=109  ctermfg=109  guibg=#8ABEB7 guifg=#8ABEB7 cterm=NONE          gui=NONE
 
-    " hi ErrorMsg         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi ModeMsg          ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi MoreMsg          ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi Question         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi WarningMsg       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi ErrorMsg         ctermbg=16   ctermfg=166  guibg=#191B1F guifg=#D3422E cterm=reverse       gui=reverse
+    hi ModeMsg          ctermbg=NONE ctermfg=70   guibg=NONE    guifg=#4BAE16 cterm=NONE          gui=NONE
+    hi MoreMsg          ctermbg=NONE ctermfg=109  guibg=NONE    guifg=#8ABEB7 cterm=NONE          gui=NONE
+    hi Question         ctermbg=NONE ctermfg=70   guibg=NONE    guifg=#4BAE16 cterm=NONE          gui=NONE
+    hi WarningMsg       ctermbg=NONE ctermfg=166  guibg=NONE    guifg=#D3422E cterm=NONE          gui=NONE
 
-    " hi TabLine          ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi TabLineFill      ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi TabLineSel       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
+    hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
     hi Cursor           ctermbg=15   ctermfg=NONE guibg=#FFFFFF guifg=NONE    cterm=NONE           gui=NONE
     hi CursorColumn     ctermbg=16   ctermfg=NONE guibg=#191B1F guifg=NONE    cterm=NONE           gui=NONE
@@ -100,37 +103,82 @@ if &t_Co >= 256 || has('gui_running')
     hi StatusLine       ctermbg=152  ctermfg=32   guibg=#BFD7DB guifg=#277BD3 cterm=NONE           gui=NONE
     hi StatusLineNC     ctermbg=32   ctermfg=152  guibg=#277BD3 guifg=#BFD7DB cterm=NONE           gui=NONE
 
-    hi Visual           ctermbg=145  ctermfg=NONE guibg=#BDBDBD guifg=NONE    cterm=NONE           gui=NONE
+    hi Visual           ctermbg=235  ctermfg=NONE guibg=#403D3D guifg=NONE    cterm=NONE           gui=NONE
     hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
     hi FoldColumn       ctermbg=NONE ctermfg=59   guibg=NONE    guifg=#373B41 cterm=NONE           gui=NONE
     hi Folded           ctermbg=NONE ctermfg=59   guibg=NONE    guifg=#373B41 cterm=NONE           gui=NONE
 
     hi VertSplit        ctermbg=NONE ctermfg=145  guibg=NONE    guifg=#BDBDBD cterm=bold           gui=bold
-    " hi WildMenu         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi WildMenu         ctermbg=16   ctermfg=117  guibg=#191B1F guifg=#7FD6FA cterm=NONE           gui=NONE
 
     hi Function         ctermbg=NONE ctermfg=220  guibg=NONE    guifg=#FFC620 cterm=NONE           gui=NONE
     hi SpecialKey       ctermbg=NONE ctermfg=59   guibg=NONE    guifg=#404449 cterm=NONE           gui=NONE
     hi Title            ctermbg=NONE ctermfg=32   guibg=NONE    guifg=#277BD3 cterm=bold           gui=bold
 
-    " hi DiffAdd          ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi DiffChange       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi DiffDelete       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi DiffText         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi DiffAdd          ctermbg=16   ctermfg=NONE guibg=#24272D guifg=NONE    cterm=NONE           gui=NONE
+    hi DiffChange       ctermbg=59   ctermfg=145  guibg=#373B41 guifg=#BDBDBD cterm=NONE           gui=NONE
+    hi DiffDelete       ctermbg=16   ctermfg=166  guibg=#191B1F guifg=#D3422E cterm=NONE           gui=NONE
+    hi DiffText         ctermbg=59   ctermfg=NONE guibg=#373B41 guifg=NONE    cterm=bold           gui=bold,italic
 
-    " hi IncSearch        ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi Search           ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi IncSearch        ctermbg=214  ctermfg=16   guibg=#F5BB12 guifg=#191B1F cterm=NONE           gui=NONE
+    hi Search           ctermbg=222  ctermfg=16   guibg=#F0C674 guifg=#191B1F cterm=NONE           gui=NONE
 
-    " hi Directory        ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi MatchParen       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi Directory        ctermbg=NONE ctermfg=173  guibg=NONE    guifg=#DE935F cterm=NONE           gui=NONE
+    hi MatchParen       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
-    " hi SpellBad         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=                  guisp=
-    " hi SpellCap         ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=                  guisp=
-    " hi SpellLocal       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=                  guisp=
-    " hi SpellRare        ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=                  guisp=
+    hi SpellBad         ctermbg=NONE ctermfg=166  guibg=NONE    guifg=#D3422E cterm=undercurl      gui=undercurl         guisp=#D3422E
+    hi SpellCap         ctermbg=NONE ctermfg=68   guibg=NONE    guifg=#3299CC cterm=undercurl      gui=undercurl         guisp=#3299CC
+    hi SpellLocal       ctermbg=NONE ctermfg=68   guibg=NONE    guifg=#3299CC cterm=undercurl      gui=undercurl         guisp=#3299CC
+    hi SpellRare        ctermbg=NONE ctermfg=109  guibg=NONE    guifg=#8ABEB7 cterm=undercurl      gui=undercurl         guisp=#8ABEB7
 
-    " hi ColorColumn      ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
-    " hi signColumn       ctermbg=     ctermfg=     guibg=        guifg=        cterm=               gui=
+    hi ColorColumn      ctermbg=16   ctermfg=NONE guibg=#24272D guifg=NONE    cterm=NONE           gui=NONE
+    hi SignColumn       ctermbg=16   ctermfg=70   guibg=#24272D guifg=#4BAE16 cterm=NONE           gui=NONE
+
+    " Some specific things that I want
+    hi coffeeObjAssign   ctermbg=NONE ctermfg=214  guibg=#F5BB12 guifg=NONE    cterm=NONE           gui=NONE
+    hi coffeeInterpDelim ctermbg=NONE ctermfg=203  guibg=#F25A55 guifg=NONE    cterm=NONE           gui=NONE
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 
 endif
+
+hi link Boolean             Constant
+hi link Character           Constant
+hi link Conceal             Constant
+hi link Debug               Special
+hi link Define              PreProc
+hi link Delimiter           Special
+hi link Exception           Statement
+hi link Float               Number
+hi link HelpCommand         Statement
+hi link HelpExample         Statement
+hi link Include             PreProc
+hi link Keyword             Statement
+hi link Label               Statement
+hi link Macro               PreProc
+hi link PreCondit           PreProc
+hi link Repeat              Statement
+hi link SpecialChar         Special
+hi link SpecialComment      Special
+hi link StorageClass        Type
+hi link Structure           Type
+hi link Typedef             Type
+
+hi link htmlEndTag          htmlTagName
+hi link htmlLink            Function
+hi link htmlSpecialTagName  htmlTagName
+hi link htmlTag             htmlTagName
+hi link xmlTag              Statement
+hi link xmlTagName          Statement
+hi link xmlEndTag           Statement
+
+hi link diffBDiffer        WarningMsg
+hi link diffCommon         WarningMsg
+hi link diffDiffer         WarningMsg
+hi link diffIdentical      WarningMsg
+hi link diffIsA            WarningMsg
+hi link diffNoEOL          WarningMsg
+hi link diffOnly           WarningMsg
+hi link diffRemoved        WarningMsg
+hi link diffAdded          String
+
