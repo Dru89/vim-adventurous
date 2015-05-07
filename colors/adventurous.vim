@@ -75,7 +75,7 @@ if &t_Co >= 256 || has('gui_running')
     hi Type             ctermbg=NONE ctermfg=222  guibg=NONE    guifg=#F0C674 cterm=underline      gui=underline
     hi Underlined       ctermbg=NONE ctermfg=173  guibg=NONE    guifg=#DE935F cterm=underline      gui=underline
 
-    hi LineNr           ctermbg=16   ctermfg=188  guibg=#24272D guifg=#C5C8C6 cterm=NONE           gui=NONE
+    hi LineNr           ctermbg=234  ctermfg=242  guibg=#1C1C1C guifg=#6C6C6C cterm=NONE           gui=NONE
     hi NonText          ctermbg=NONE ctermfg=152  guibg=NONE    guifg=#BFD7DB cterm=NONE           gui=NONE
 
     hi Pmenu            ctermbg=59   ctermfg=145  guibg=#373B41 guifg=#BDBDBD cterm=NONE          gui=NONE
@@ -95,7 +95,7 @@ if &t_Co >= 256 || has('gui_running')
     hi Cursor           ctermbg=15   ctermfg=NONE guibg=#FFFFFF guifg=NONE    cterm=NONE           gui=NONE
     hi CursorColumn     ctermbg=16   ctermfg=NONE guibg=#191B1F guifg=NONE    cterm=NONE           gui=NONE
     hi CursorLine       ctermbg=16   ctermfg=NONE guibg=#191B1F guifg=NONE    cterm=NONE           gui=NONE
-    hi CursorLineNr     ctermbg=16   ctermfg=152  guibg=#191B1F guifg=#BFD7DB cterm=NONE           gui=NONE
+    hi CursorLineNr     ctermbg=235  ctermfg=249  guibg=#262626 guifg=#B2B2B2 cterm=NONE           gui=NONE
 
     hi helpLeadBlank    ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE
     hi helpNormal       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=NONE           gui=NONE
@@ -133,7 +133,7 @@ if &t_Co >= 256 || has('gui_running')
     hi SpellRare        ctermbg=NONE ctermfg=109  guibg=NONE    guifg=#8ABEB7 cterm=undercurl      gui=undercurl         guisp=#8ABEB7
 
     hi ColorColumn      ctermbg=16   ctermfg=NONE guibg=#24272D guifg=NONE    cterm=NONE           gui=NONE
-    hi SignColumn       ctermbg=16   ctermfg=70   guibg=#24272D guifg=#4BAE16 cterm=NONE           gui=NONE
+    hi SignColumn       ctermbg=234  ctermfg=242  guibg=#1C1C1C guifg=#6C6C6C cterm=NONE           gui=NONE
 
     " Some specific things that I want
     hi coffeeObjAssign   ctermbg=NONE ctermfg=214  guibg=#F5BB12 guifg=NONE    cterm=NONE           gui=NONE
